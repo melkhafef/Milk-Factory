@@ -1,0 +1,226 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    padding: 2px;
+    margin: 2px;
+}
+body{
+        background: linear-gradient(45deg, #ff9260, #60cdff);
+
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 10%;
+    background-color: #ff9260;
+    margin-bottom: 10%;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+}
+nav input{
+    height: 90%;;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+#milk,
+#milkFT,
+#salaries,
+#others ,#production,#store,#sales{
+    width: 30%;
+    margin-top: 5%;
+    border: 1px solid black;
+text-align: right;
+padding-right: 1%;
+    background: #9260ff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #cdff60;
+}
+button{
+    background: #cdff60;
+}
+button:hover{
+        background: #60cdff;
+}
+input,select{
+background:#60cdff;
+}
+h1{
+    width: 100%;
+    margin-top: 10%;
+text-align: center;
+color: #ff9260;
+}
+h2{
+  text-align: center;
+  color: #ff9260;
+
+}
+#milk #sellers {
+    margin-right: 15%;
+    width:150px ;
+}
+#milk #amount {
+margin-right: 4.5%;
+width:150px;
+}
+#milk #price{
+  margin-right: 7%;
+  width:150px;
+}
+#milk #total{
+    margin-right: 13.5%;
+    width:150px;
+}
+
+#milk #date {
+    margin-right: 7%;
+    display: inline;
+}
+#from {
+     margin-right: 7%;
+     display: inline;
+}
+#to {
+     margin-right: 7%;
+     display: inline;
+}
+
+button {
+width: 100%;
+height: 40px;
+}
+.add,.update{
+    width: 25px;
+    height: 25px;
+}
+#milk #milkType {
+ margin-right: 15%;
+ width: 150px;
+}
+#milk #paid {
+ margin-right: 11%;
+ width: 150px;
+}
+#milk #remainder {
+ margin-right: 12%;
+ width: 150px;
+}
+#salaries #employees{
+     margin-right: 15%;
+     width: 150px;
+}
+#salaries #salary{
+     margin-right: 17%;
+     width: 150px;
+}
+#salaries #date{
+    display: inline;
+     margin-right: 12%;
+}
+
+#others #othersTypes{
+     margin-right: 17%;
+     width: 150px;
+}
+#others #amount{
+     margin-right: 16.5%;
+     width: 150px;
+}
+#others #cost{
+     margin-right: 16.5%;
+     width: 150px;
+}
+#others #totalCost{
+     margin-right: 13%;
+     width: 150px;
+}
+#others #date {
+    display: inline;
+    margin-right: 10%;
+}
+table,th,td{
+    border: 1px solid #60cdff;
+    background: #ff9260;
+}
+tr:hover{
+    background: #cdff60;
+
+}
+#milkTable{
+    width: 30%;
+}
+#salaryTable{
+    width: 20%;
+    margin-left: 10%;
+}
+#othersTable{
+    width: 30%;
+        margin-left: 8%;
+
+}
+#DivIdToPrint{
+display: none;
+}
+.hide{
+    display: none;
+}
+table{
+    width:350px;
+}
+#addseller,
+#updateseller,
+#addEmployee,
+#updateEmployee,
+#addOther,
+#updateOther,
+#addProduct,
+#updateProduct {
+    border: 1px dashed black;
+    background-color: bisque;
+}
+#addseller input,
+#updateseller input,
+#addEmployee input,
+#updateEmployee input,
+#addOther input,
+#updateOther input,
+#addProduct input,
+#updateProduct input {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#addseller button,
+#updateseller button,
+#addEmployee button,
+#updateEmployee button,
+#addOther button,
+#updateOther button,
+#addProduct button,
+#updateProduct button {
+    width: 80%;
+      margin-left: 10%;
+    margin-right: 10%;
+        }
+      
+
+#authentication{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 25%;
+    border: 2px solid black;
+    background-color: aquamarine;
+    padding: 50px;
+    text-align: center;
+}
+#sales{
+    width: 60%;
+}

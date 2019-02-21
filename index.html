@@ -1,0 +1,821 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <div id="authentication" >
+        <input type="password" id="password">
+        <label>اسم المستخدم</label>
+        <input type="text" id="username">
+        <label>كلمة السر</label>
+        <button id="sign">تسجيل الدخول</button>
+    </div>
+    <div class="hide" id="body">
+            <nav><input></nav>
+    <main>
+        <div id="milk">
+            <h2>مشتريات) اللبن)</h2>
+            <div>
+                <button class="add" id="btnDeleteSeller">Del</button>
+                <button class="add" id="btnUpdateSeller">UD</button>
+                <button class="add" id="btnAddSeller">+</button>
+                <select id="sellers">
+                </select>
+                <label> البائع</label>
+            </div>
+            <div id="addseller" class="hide">
+                <input id="sellerName">
+            <button class="add" id="plusSeller">add</button>
+            </div>
+            <div id="updateseller" class="hide">
+                <input id="nowSellerName">
+                <input id="afterSellerName">
+            <button class="add" id="changeSeller">update</button>
+            </div>
+            <div>
+                <select id="milkType">
+                    <option>لبن جاموسي</option>
+                    <option>لبن بقري</option>
+                </select>
+                <label> النوع</label>
+            </div>
+            <div>
+                <input id="amount" type="number">
+                <label> الكمية بالكيلو</label>
+            </div>
+            <div>
+                <input id="price" type="number">
+                <label>سعر الكيلو</label>
+            </div>
+            <div>
+                <input id="total" >
+                <label>السعر</label>
+            </div>
+            <div>
+                <input id="paid" type="number">
+                <label>المدفوع</label>
+            </div>
+            <div>
+                <input id="remainder">
+                <label>المتبقي</label>
+            </div>
+            <div>
+                <div id="date">
+                    <select id="days">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select id="monthes">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <select id="years">
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                    <select id="time">
+                        <option>ًصباحا</option>
+                        <option>ًمساءا</option>
+                    </select>
+                </div>
+                <label>التاريخ</label>
+            </div>
+            <div>
+                <button id="save">حفظ</button>
+                <button id="milkDetails">اخفاء / اظهار التفاصيل</button>
+            </div>
+            <div>
+                <h1>كمية اللبن في فترة محددة</h1>
+                <div id="from">
+                    <select id="days">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                <select id="monthes">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                    <select id="years">
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                    <select id="time">
+                        <option>ًصباحا</option>
+                        <option>ًمساءا</option>
+                    </select>
+                </div>
+                <label>من</label>
+            </div>
+            <div>
+                <div id="to">
+                    <select id="days">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select id="monthes">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <select id="years">
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                    <select id="time">
+                        <option>ًصباحا</option>
+                        <option>ًمساءا</option>
+                    </select>
+                </div>
+                <label>إلى</label>
+            </div>
+            <input id="totalMilk">
+            <button id="calculate">احسب</button>
+            <div id="milkTable" class="hide">
+                <table>
+                    <tr id="milkInfo">
+                        <th>التاريخ</th>
+                        <th>المتبقي</th>
+                        <th>المدفوع</th>
+                        <th>الاجمالي</th>
+                        <th>السعر</th>
+                        <th>الكمية</th>
+                        <th>النوع </th>
+                        <th>البائع</th>
+                        <th class='hide'>المسلسل</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="salaries">
+            <h2>مصروفات ) الأجور )</h2>
+            <div>
+                <button class="add" id="btnDeleteEmployee">Del</button>
+                <button class="add" id="btnUpdateEmployee">UD</button>
+                <button class="add" id="btnAddEmployee">+</button>
+                <select id="employees">
+                </select>
+                <label>الاسم</label>
+            </div>
+                <div id="addEmployee" class="hide">
+                    <input id="employeeName">
+                    <button class="add" id="plusEmployee">add</button>
+                </div>
+                <div id="updateEmployee" class="hide">
+                    <input id="nowEmployeeName">
+                    <input id="afterEmployeeName">
+                    <button class="add" id="changeEmployee">update</button>
+                </div>
+                <div>
+                    <select id="employeeType">
+                        <option>موظف</option>
+                        <option>مشال</option>
+                    </select>
+                    <label>النوع</label>
+                </div>
+            <div>
+                <input id="salary" type="number">
+                <label>المرتب</label>
+            </div>
+            <div>
+                <div id="date">
+                    <select id="days">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+            <select id="monthes">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+                    <select id="years">
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                    <select id="time">
+                        <option>ًصباحا</option>
+                        <option>ًمساءا</option>
+                    </select>
+                </div>
+                <label>التاريخ</label>
+            </div>
+            <button id="save">حفظ</button>
+            <button id="salaryDetails">اظهار / اخفاء التفاصيل</button>
+            <div id="salaryTable" class="hide">
+                <table>
+                    <tr id="salariesInfo">
+                        <th>التاريخ</th>
+                        <th>الأجر </th>
+                        <th>نوع العمل</th>
+                        <th>الموظف</th>
+                        <th class='hide'>المسلسل</th>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="others">
+            <h2>مصروفات أخرى</h2>
+            <div>
+                <button class="add" id="btnDeleteOther">Del</button>
+                <button class="add" id="btnUpdateOther">UD</button>
+                 <button class="add" id="btnAddOther">+</button>
+                <select id="othersTypes">
+                </select>
+                <label>النوع</label>
+            </div>
+                <div id="addOther" class="hide">
+                    <input id="otherName">
+                    <button class="add" id="plusOther">add</button>
+                </div>
+                <div id="updateOther" class="hide">
+                    <input id="nowOtherName">
+                    <input id="afterOtherName">
+                    <button class="add" id="changeOther">update</button>
+                </div>
+            <div>
+                <input id="amount" type="number">
+                <label>الكمية</label>
+            </div>
+            <div>
+                <input id="cost" type="number">
+                <label>السعر</label>
+            </div>
+            <div>
+                <input id="totalCost">
+                <label>الاجمالي</label>
+            </div>
+            <div>
+                <div id="date">
+                    <select id="days">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                <select id="monthes">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                    <select id="years">
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                    <select id="time">
+                        <option>ًصباحا</option>
+                        <option>ًمساءا</option>
+                    </select>
+                </div>
+                <label>التاريخ</label>
+            </div>
+            <div>
+                <input type="checkbox" id="addToMasrof" checked>
+                <label>تضاف للمصروفات</label>
+            </div>
+            <button id="save">حفظ</button>
+             <button id="otherDetails">اظهار / اخفاء التفاصيل</button>
+<div id="othersTable" class="hide">
+    <table>
+        <tr id="othersInfo">
+            <th>التاريخ</th>
+            <th>الاجمالي</th>
+            <th>السعر</th>
+            <th>الكمية</th>
+            <th>النوع </th>
+            <th class='hide'>المسلسل</th>
+        </tr>
+    </table>
+</div>
+        </div>
+        <div id="production">
+            <h2>الإنتاج</h2>
+            <div>
+                <button class="add" id="btnDeleteProduct">Del</button>
+                <button class="add" id="btnUpdateProduct">UD</button>
+                 <button class="add" id="btnAddProduct">+</button>
+                <select id="productionType">
+                </select>
+                <label> النوع</label>
+            </div>
+            <div id="addProduct" class="hide">
+                <input id="ProductName">
+                <button class="add" id="plusProduct">add</button>
+            </div>
+            <div id="updateProduct" class="hide">
+                <input id="nowProductName">
+                <input id="afterProductName">
+                <button class="add" id="changeProduct">update</button>
+            </div>
+            <div>
+                <input id="amount" type="number">
+                <label> الكمية </label>
+            </div>
+            <div>
+                <div id="date">
+                    <select id="days">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select id="monthes">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <select id="years">
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                    <select id="time">
+                        <option>ًصباحا</option>
+                        <option>ًمساءا</option>
+                    </select>
+                </div>
+                <label>التاريخ</label>
+            </div>
+            <div>
+                <button id="save">حفظ</button>
+                <button id="productionDetails" style="width:100%">اخفاء / اظهار التفاصيل</button>
+            </div>
+            <div id="productionTable" class="hide">
+                <table>
+                    <tr id="productionInfo">
+                        <th>التاريخ</th>
+                        <th>الكمية</th>
+                        <th>النوع </th>
+                        <th class='hide'>المسلسل </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div id="sales">
+            <h2> المبيعات</h2>
+            <div>
+                <button class="add" id="btnDeleteBuy">Del</button>
+                <button class="add" id="btnUpdateBuy">UD</button>
+                <button class="add" id="btnAddBuy">+</button>
+                <select id="salesName">
+
+                </select>
+                <label>اسم المشتري</label>
+            </div>
+             <div id="addBuy" class="hide">
+                <input id="buyName">
+            <button class="add" id="plusBuy">add</button>
+            </div>
+            <div id="updateBuy" class="hide">
+                <input id="nowBuyName">
+                <input id="afterBuyName">
+            <button class="add" id="changeBuy">update</button>
+            </div>
+            <div>
+                <select id="salesTypes">
+                    <option>دفع مقدم</option>
+                </select>
+                <label>النوع</label>
+            </div>
+            <div>
+                <input id="amount" type="number">
+                <label>الكمية</label>
+            </div>
+            <div>
+                <input id="amountOrW" type="checkbox">
+                <input id="weight" type="number">
+                <label>الوزن</label>
+            </div>
+            <div>
+                <input id="cost" type="number">
+                <label>السعر</label>
+            </div>
+            <div>
+                <input id="totalCost">
+                <label>الاجمالي</label>
+            </div>
+            <div>
+                <input id="paidToFactory">
+                <label>المدفوع للمصنع</label>
+            </div>
+            <div>
+                <input id="retainToFactory">
+                <label>المتبقي للمصنع</label>
+            </div>
+            <div>
+                <div id="date">
+                    <select id="days">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                <select id="monthes">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                    <select id="years">
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                    <select id="time">
+                        <option>ًصباحا</option>
+                        <option>ًمساءا</option>
+                    </select>
+                </div>
+                <label>التاريخ</label>
+            </div>
+            <button id="save">حفظ</button>
+             <button id="salesDetails">اظهار / اخفاء التفاصيل</button>
+<div id="salesTable" class="hide">
+    <table>
+        <tr id="salesInfo">
+            <th>التاريخ</th>
+            <th>الباقي للمصنع</th>
+            <th>المدفوع للمصنع</th>
+            <th>الاجمالي</th>
+            <th>السعر</th>
+            <th>الوزن</th>
+            <th>الكمية</th>
+            <th>النوع </th>
+            <th>الاسم </th>
+            <th class='hide'>المسلسل </th>
+        </tr>
+    </table>
+</div>
+        </div>
+    <div id="store">
+        <h2>المخزون</h2>
+        <div>
+            <select id="storeType">
+            </select>
+            <label> النوع</label>
+        </div>
+        <div>
+            <input id="amount">
+            <label> الكمية </label>
+        </div>
+        <h2>اجمالي الصرف</h2>
+        <input id="out" style="width:100%">
+        <h2>اجمالي الدخل</h2>
+        <input id="in" style="width:100%">
+        <h2>اجمالي الربح</h2>
+        <input id="profit" style="width:100%">
+    </div>
+       
+      
+     
+    </main>
+</div>
+<div id='DivIdToPrint'>
+</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
